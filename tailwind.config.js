@@ -6,12 +6,23 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'teal': '#66e2dc',
+      'red-orange': '#fa7453',
+      'goldenrod': '#ffb964',
+      'offwhite': '#fcfaf9',
+      'black': "#191826"
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontSize: {
+        'xl': ['88px', '88px'],
+        'lg': ['40px', '52px'],
+        'med': ['20px', '34px'],
+        'base': ['16px', '26px']
       },
+      backgroundImage: {
+        'hero-pattern': "url('../../public/bg-main-mobile.png')"
+      }
     },
   },
   plugins: [],
