@@ -21,8 +21,14 @@ module.exports = {
         'base': ['16px', '26px']
       },
       backgroundImage: {
-        'hero-pattern': "url('../../public/bg-main-mobile.png')"
-      }
+        'main-pattern-mobile': "url('../../public/bg-main-mobile.png')",
+        'main-pattern-tablet': "url('../../public/bg-main-tablet.png')",
+        'main-pattern-desktop': "url('../../public/bg-main-desktop.png')",
+      },
+      backgroundPosition: {
+        'hero-position-mobile': 'top -200px left 50px',
+        'hero-position-tablet': 'top -350px left -350px'
+      },
     },
   },
   plugins: [],

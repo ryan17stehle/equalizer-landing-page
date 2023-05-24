@@ -17,8 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="bg-offwhite">
-      <body className={ibm.className}>
+    <html lang="en">
+      <body className={`${ibm.className}
+       bg-offwhite bg-main-pattern-mobile bg-no-repeat bg-hero-position-mobile
+        md:bg-main-pattern-tablet md:bg-hero-position-tablet`} >
         {children}
       </body>
     </html>

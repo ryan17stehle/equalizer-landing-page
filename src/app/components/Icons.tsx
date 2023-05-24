@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Icons() {
   return (
-    <footer className="flex gap-4">
+    <section className="flex gap-8 mb-12 items-center">
         <Image 
             src="/icon-facebook.svg" 
             alt="facebook icon"
@@ -21,6 +21,6 @@ export default function Icons() {
             width={32}
             height={32}
         />
-    </footer>
+    </section>
   )
 }

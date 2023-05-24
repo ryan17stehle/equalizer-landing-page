@@ -1,13 +1,14 @@
-import Icons from "./components/Icons"
+
 import Header from "./components/Header"
 import Main from './components/Main'
+import Footer from "./components/Footer"
 
 export default function Home() {
     return (
-      <main className="px-6 py-12">
+      <div className="overflow-x-hidden">
         <Header />
         <Main />
-        <Icons />
-      </main>
+        <Footer />
+      </div>
     )
 }

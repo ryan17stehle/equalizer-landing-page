@@ -1,29 +1,30 @@
 import Image from "next/image"
 import logo from '../../../public/logo.svg'
-import bgMobile from "../../../public/bg-main-mobile.png"
+import bgShapes from '../../../public/bg-pattern-1.svg'
+
 
 export default function Header() {
     return (
-        <section>
-            <Image 
-                src={bgMobile}
-                alt="blurred background colors"
-                className="absolute border-2 border-red-orange -top-40 -right-40"
-            />
+        <header className="mx-6 mt-12 relative lg:px-72">
             <Image 
                 src={logo}
                 alt="equalizer logo"
-                className=" mb-16"
+                className="mb-16"
             />
-            <h1 className="text-lg font-bold tracking-tight text-black mb-5">
+            <Image 
+                src={bgShapes}
+                alt="background image of various shapes"
+                className="hidden absolute -top-20 -right-10 md:block"
+            />
+            <h1 className="text-lg font-bold tracking-tight text-black mb-5 md:w-3/6">
                 We make your music sound extraordinary.
             </h1>
-            <p className=" text-base text-black mb-16">
+            <p className=" text-base text-black mb-60 md:w-3/6">
                 A system audio equalizer specifically designed for Android and iOS. 
                 Freely tune the way your music sounds with a professional grade 
                 parametric EQ & volume mixer. Control bass, mids, treble, gain 
                 control, reverb, and more!
             </p>
-        </section>
+        </header>
     )
 }
